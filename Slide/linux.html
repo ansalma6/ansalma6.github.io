@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Linux</title>
+
+	<meta name="description" content="GNU/Linux workshop">
+		<meta name="author" content="FOSSCell, NITC">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Linux Kernel</h1>
+				</section>
+
+				<section>
+					<p>Since all Linux distributions are still considered to be Linux, that means there’s at least something that they have in common, and that would be the Linux kernel.
+						 This piece of software is the core of the operating system – it bridges conventional software that you interact with such as
+						  your browser to the hardware that actually does all the work.
+						 It also includes a large number of drivers to provide support for whatever hardware you have.</p>
+				</section>
+
+				<section>
+					<h1>Linux Distro</h1>
+				</section>
+
+				<section>
+					A linux distribution or often abbreviated as distro is the operating system, made upon
+					Linux Kernel which contains the package management system, display manager and many other tools.
+					The distribution leader can choose different applications to do these beacuse multiple applications approach
+					the topic in different ways
+				</section>
+
+				<section>
+					<h1>Desktop Environment</h1>
+				</section>
+
+				<section>
+					Some distributions can differ even simply based on which desktop environment they use.
+					This case is seen with Ubuntu, where Ubuntu uses Gnome/Unity, Kubuntu uses KDE, Xubuntu uses Xfce, Lubuntu uses LXDE, and so on.
+				</section>
+
+				<section>
+					<img src="images/gnome.png" style="height:300px;width:400px;"/>
+					<img src="images/unity.png" style="height:300px;width:400px;"/>
+					<img src="images/kde.jpg" style="height:300px;width:400px;"/>
+				</section>
+
+				<section>
+					<h1>Linux filesystem</h1>
+				</section>
+
+				<section>
+					<img src="images/linux-filesystem.png" />
+				</section>
+
+				<section>
+
+					<h3>Check this out!</h3>
+
+					<ul>
+					<li>a directory for user programs (/usr)
+					<ol>
+						<li>binary for the installed programs (/usr/bin)
+						<li>source code for the installed programs (/usr/src)
+					</ol>
+
+					<li>a directory containing the users' personal data (/home)
+
+					<li>a directory to store temporary data like print- and mail-queues (/var)
+
+					<li>a directory for third party and extra software (/opt)
+
+					<li>a directory for the <emp>important</emp> configuration files (/etc)
+					</ul>
+				</section>
+				
+				<section>
+					<a href="index.html#/1">let's go on</a>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
